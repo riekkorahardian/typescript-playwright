@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",                       // Kompilasi ke versi JavaScript terbaru
+    "module": "CommonJS",                    // Modul sistem untuk Node.js
+    "lib": ["ESNext", "DOM"],                // Gunakan API modern JS dan browser
+    "outDir": "dist",                        // Hasil compile masuk ke folder dist
+    "rootDir": ".",                          // Source code di root
+    "strict": true,                          // Aktifkan pengecekan tipe yang ketat
+    "esModuleInterop": true,                 // Untuk import module seperti 'playwright'
+    "skipLibCheck": true,                    // Lewatkan cek tipe untuk dependency
+    "forceConsistentCasingInFileNames": true // Hindari masalah huruf besar/kecil di import path
+  },
+  "include": [
+    "tests/**/*.ts",
+    "pages/**/*.ts"
+  ]
+}
