@@ -19,3 +19,17 @@ This is an automation portfolio project built using [Playwright](https://playwri
 ---
 
 ## 🗂️ Project Structure
+playwright-ts-portfolio/
+│
+├── tests/                         # Test suite utama
+│   ├── digital-wallet.spec.ts     # Validasi teks dan gambar promo
+│   └── navigation.spec.ts         # Navigasi dari homepage ke submenu Dompet Digital
+│
+├── pages/                         # Page Object Models (POM)
+│   ├── homePage.ts                # Aksi & locator homepage
+│   └── digitalWalletPage.ts       # Aksi & validasi halaman Dompet Digital
+├── playwright.config.ts           # Konfigurasi test runner Playwright
+│
+├── tsconfig.json                  # Konfigurasi TypeScript
+├── package.json                   # Dependency dan script
+└── README.md                      # Dokumentasi project ini
