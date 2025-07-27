@@ -1,0 +1,19 @@
+{
+  "name": "typescript-playwright-automation",
+  "version": "1.0.0",
+  "description": "Automation testing using Playwright with TypeScript. Scenario: homepage, navigate to digital wallet, verify content.",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:debug": "npx playwright test --debug",
+    "test:report": "npx playwright show-report",
+    "build": "tsc"
+  },
+  "author": "Riekko Rahardian",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.45.0",
+    "typescript": "^5.4.5",
+    "ts-node": "^10.9.2"
+  }
+}
